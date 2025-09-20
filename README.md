@@ -43,6 +43,28 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
+- Here is the json file(If you want to set up in  Vs Code)
+```text
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+    
+        {
+            "name": "Python Debugger: Odoo-18 with Arguments",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "D:\\Odoo-18\\Community\\odoo-18.0\\odoo-bin", //Odoo bin path(inside odoo 18.0)
+            "console": "integratedTerminal",
+            "python":"D:\\Odoo-18\\myenv\\Scripts\\python.exe",//Virtual environment path(follow the path structure)
+            "args": ["-c", "D:\\Odoo-18\\custom-addons\\odoo.conf" ]//Odoo configuration path (Follow the path structure)
+        }
+    ]
+}
+```
+
 - Now follow the video instructions
 [Video](https://drive.google.com/file/d/1LewduxBVe4lLZwqpDGfCXnppWhV8L9o6/view?usp=sharing)
 
