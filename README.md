@@ -15,7 +15,8 @@ This is a simple Student Management Module for Odoo 18.
 
 
 ## 🛠 Set up instruction
-- First, clone the GitHub repository of Student Management
+- First, install all the tools provided in Technologies & Tools
+- Now clone the GitHub repository of Student Management
 ```bash
 git clone https://github.com/Fail2/Student-Management.git
 ```
@@ -40,6 +41,6 @@ venv\Scripts\activate
 - Now follow the video instructions
 [Video](https://drive.google.com/file/d/1LewduxBVe4lLZwqpDGfCXnppWhV8L9o6/view?usp=sharing)
 
--If you have any confusion, then you can follow this video
+- If you have any confusion, then you can follow this video
 [Video](https://youtu.be/Fy-FiusLMhU?si=IUjLcgB2ldXuynd2&t=877)
 
