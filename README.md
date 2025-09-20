@@ -25,7 +25,7 @@ git clone https://github.com/Fail2/Student-Management.git
 cd Student-Management
 git clone https://github.com/odoo/odoo.git
 ```
--Then create a virtual environment and activate it
+- Then create a virtual environment and activate it
 ```bash
 cd Student-Management
 python -m venv venv
@@ -43,4 +43,27 @@ venv\Scripts\activate
 
 - If you have any confusion, then you can follow this video
 [Video](https://youtu.be/Fy-FiusLMhU?si=IUjLcgB2ldXuynd2&t=877)
+
+
+## 🦾Challenges
+- Learning XML:
+
+    - Initially, I didn’t know XML and sometimes used deprecated terms.
+
+    - Struggled with naming conventions, which caused the module not to run.
+
+- Understanding Security Folder:
+
+    - Unsure how to configure it and what it meant.
+
+    - Writing code without understanding the purpose was confusing.
+
+- Overcoming Confusion with Module Structure:
+
+     - Watched tutorials and created a test module to practice.
+
+     - Helped me understand Odoo modules before creating the final module.
+
+- Persistence:
+     - My never-give-up mindset helped me learn, experiment, and finally complete the Student            Management module successfully.
 
