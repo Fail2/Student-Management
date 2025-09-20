@@ -38,7 +38,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 venv\Scripts\activate
 ```
-- Then install the requirements.txt file inside Odoo folder
+- Then install the requirements.txt file (inside Odoo folder)
 ```bash
 pip install -r requirements.txt
 ```
