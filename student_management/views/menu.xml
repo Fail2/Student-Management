@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Main Menu -->
+    <menuitem id="menu_student_management_root"
+              name="Student Management"
+              sequence="10"
+              web_icon="student_management,static/description/icon.png"/>
+
+    <!-- Sub Menus -->
+    <menuitem id="menu_student_management_students"
+              name="Students"
+              parent="menu_student_management_root"
+              action="action_student_management_student"
+              sequence="10"/>
+
+    <menuitem id="menu_student_management_courses"
+              name="Courses"
+              parent="menu_student_management_root"
+              action="action_student_management_course"
+              sequence="20"/>
+</odoo>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- List view -->
+    <record id="view_student_management_student_list" model="ir.ui.view">
+        <field name="name">student.management.student.list</field>
+        <field name="model">student.management.student</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="roll_no"/>
+                <field name="name"/>
+                <field name="email"/>
+                <field name="department"/>
+                <field name="course_count" string="Enrolled Courses"/>
+                <field name="total_credits"/>
+            </list>
+        </field>
+    </record>
+    <!-- Form view -->
+    <record id="view_student_management_student_form" model="ir.ui.view">
+        <field name="name">student.management.student.form</field>
+        <field name="model">student.management.student</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <!-- New Button -->
+                    <button name="action_view_courses"
+                        type="object"
+                        string="Show Enrolled Courses"
+                        class="btn-primary"
+                        icon="fa-book"/>
+                </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <!-- Smart Button -->
+                        <button class="oe_stat_button"
+                            type="object"
+                            name="action_view_courses"
+                            icon="fa-book">
+                            <field string="Courses" name="course_count" widget="statinfo"/>
+                        </button>
+                    </div>
+                    <group name="basic_info" string="Student Information">
+                        <field name="name" required="1"/>
+                        <field name="roll_no" required="1"/>
+                        <field name="email" required="1"/>
+                        <field name="department" required="1"/>
+                    </group>
+                    <group name="stats" string="Statistics">
+                        <field name="course_count" readonly="1"/>
+                        <field name="total_credits" readonly="1"/>
+                    </group>
+                    <notebook>
+                        <page name="courses" string="Enrolled Courses">
+                            <field name="course_ids" nolabel="1">
+                                <list editable="bottom">
+                                    <field name="code"/>
+                                    <field name="name"/>
+                                    <field name="credit"/>
+                                </list>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <!-- Action without search view -->
+    <record id="action_student_management_student" model="ir.actions.act_window">
+        <field name="name">Students</field>
+        <field name="res_model">student.management.student</field>
+        <field name="view_mode">list,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face"> Create your first student! </p>
+            <p> Add students to the system and enroll them in courses. </p>
+        </field>
+    </record>
+</odoo>
