@@ -19,4 +19,5 @@ This is a simple Student Management Module for Odoo 18.
 ```bash
 git clone https://github.com/Fail2/Student-Management.git
 cd Student-Management
+git clone https://github.com/odoo/odoo.git
 ```
