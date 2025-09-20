@@ -20,7 +20,7 @@ This is a simple Student Management Module for Odoo 18.
 git clone https://github.com/Fail2/Student-Management.git
 ```
 - Then clone github repository of Odoo-18.0
-  ```bash
+```bash
 cd Student-Management
 git clone https://github.com/odoo/odoo.git
 ```
@@ -37,4 +37,6 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 venv\Scripts\activate
 ```
+- Now follow the video instruction
+[Video](https://drive.google.com/file/d/1LewduxBVe4lLZwqpDGfCXnppWhV8L9o6/view?usp=sharing)
 
