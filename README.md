@@ -15,9 +15,26 @@ This is a simple Student Management Module for Odoo 18.
 
 
 ## 🛠 Set up instruction
-- First clone github repository
+- First clone github repository of Student Management
 ```bash
 git clone https://github.com/Fail2/Student-Management.git
+```
+- Then clone github repository of Odoo-18.0
+  ```bash
 cd Student-Management
 git clone https://github.com/odoo/odoo.git
 ```
+-Then create virtual environment and activate it
+```bash
+cd Student-Management
+python -m venv venv
+venv\Scripts\activate
+```
+- If you can't activate the virtual environment check the execution policy and set it to RemoteSigned and active the virtual environment
+```base
+Get-ExecutionPolicy
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+venv\Scripts\activate
+```
+
